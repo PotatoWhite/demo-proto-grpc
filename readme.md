@@ -1,4 +1,4 @@
-# Protocol Buffer를 이용한 GRPC의 구현
+# ProtocolBuffer 를 이용한 GRPC 서버 구현
 
 # 0. 사전준비
 - golang 설치 (https://go.dev/doc/install)

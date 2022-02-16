@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package grpc_proto;
+option go_package = "potato/demo-protocolbuffer-grpc/grpc";
+
+service SampleService{
+  rpc GetAllSamples(GetAllSamplesRequest) returns (GetAllSamplesResponse){
+
+  }
+}
+
+message Sample {
+  int32 id = 1;
+  string data = 2;
+}
+
+message GetAllSamplesRequest {
+  int32  max = 1;
+  string data = 2;
+}
+
+message GetAllSamplesResponse {
+  repeated grpc_proto.Sample samples = 1;
+}
